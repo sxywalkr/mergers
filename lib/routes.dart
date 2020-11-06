@@ -5,6 +5,7 @@ import 'package:noteapp/ui/setting/setting_screen.dart';
 import 'package:noteapp/ui/splash/splash_screen.dart';
 import 'package:noteapp/ui/todo/create_edit_todo_screen.dart';
 import 'package:noteapp/ui/todo/todos_screen.dart';
+import 'package:noteapp/ui/home2/home2_screen.dart';
 
 class Routes {
   Routes._(); //this is to prevent anyone from instantiate this object
@@ -13,6 +14,7 @@ class Routes {
   static const String login = '/login';
   static const String register = '/register';
   static const String home = '/home';
+  static const String home2 = '/home2';
   static const String setting = '/setting';
   static const String create_edit_todo = '/create_edit_todo';
 
@@ -21,6 +23,7 @@ class Routes {
     login: (BuildContext context) => SignInScreen(),
     register: (BuildContext context) => RegisterScreen(),
     home: (BuildContext context) => TodosScreen(),
+    home2: (BuildContext context) => Home2Screen(),
     setting: (BuildContext context) => SettingScreen(),
     create_edit_todo: (BuildContext context) => CreateEditTodoScreen(),
   };

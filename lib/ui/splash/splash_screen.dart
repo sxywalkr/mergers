@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
       children: <Widget>[
         Center(
             child: Text(
-              AppLocalizations.of(context).translate("splashTitle"),
+          AppLocalizations.of(context).translate("splashTitle"),
           style: TextStyle(
             fontSize: Theme.of(context).textTheme.headline.fontSize,
           ),
@@ -43,6 +43,6 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   redirect() async {
-    Navigator.of(context).pushReplacementNamed(Routes.home);
+    Navigator.of(context).pushReplacementNamed(Routes.home2);
   }
 }
