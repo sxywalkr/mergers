@@ -32,6 +32,7 @@ dependencies:
   flutter_platform_widgets: ^0.32.4
   docx_template: ^0.2.2
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

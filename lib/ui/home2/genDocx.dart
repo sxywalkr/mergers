@@ -6,7 +6,7 @@ import 'package:docx_template/src/model.dart';
 ///
 /// Read file template.docx, produce it and save
 ///
-void main() async {
+void genDocx() async {
   final f = File("mDoc.docx");
   final docx = await DocxTemplate.fromBytes(await f.readAsBytes());
 

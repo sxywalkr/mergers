@@ -66,7 +66,7 @@ android {
         }
         prod{
             dimension "flavor-type"
-            applicationId "com.example.create_flutter_provider_app.prod"
+            applicationId "com.sxywalkr.mergers"
             versionCode 1
             versionName "1.0"
         }
