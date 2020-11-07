@@ -6,6 +6,8 @@ import 'package:noteapp/models/todo_model.dart';
 import 'package:noteapp/services/firestore_path.dart';
 import 'package:noteapp/services/firestore_service.dart';
 
+import 'package:noteapp/models/penyedia_model.dart';
+
 String documentIdFromCurrentDate() => DateTime.now().toIso8601String();
 
 /*
@@ -77,4 +79,18 @@ class FirestoreDatabase {
     }
     await batchDelete.commit();
   }
+
+  // ***** Penyedia
+  //Method to create/update todoModel
+  Future<void> setPenyedia(PenyediaModel penyedia) async =>
+      await _firestoreService.setData(
+        path: FirestorePath.penyedia(penyedia.id),
+        data: penyedia.toMap(),
+      );
+  //Method to retrieve all todos item from the same user based on uid
+  Stream<List<PenyediaModel>> penyediasStream() =>
+      _firestoreService.collectionStream(
+        path: FirestorePath.penyedias(),
+        builder: (data, documentId) => PenyediaModel.fromMap(data, documentId),
+      );
 }

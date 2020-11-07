@@ -40,5 +40,15 @@
   "todosCreateEditTaskNameValidatorMsg": "Name can't be empty",
   "todosCreateEditCompletedTxt": "Completed ?",
   "todosEmptyTopMsgDefaultTxt": "Nothing here",
-  "todosEmptyBottomDefaultMsgTxt": "Add a new item to get started"
+  "todosEmptyBottomDefaultMsgTxt": "Add a new item to get started",
+  "penyediaAppBarTitle": "Data Master Penyedia",
+  "penyediasEmptyTopMsgDefaultTxt": "Data belum ada",
+  "penyediasEmptyBottomDefaultMsgTxt": "Tambahkan data untuk memulai",
+  "penyediasSnackBarActionLbl": "Undo",
+  "penyediasErrorTopMsgTxt": "Something went wrong",
+  "penyediasCreateEditAppBarTitleNewTxt": "New Penyedia",
+  "penyediasCreateEditAppBarTitleEditTxt": "Edit Penyedia",
+  "penyediasCreateEditValidatorMsg": "Nama Badan Usaha tidak boleh kosong",
+  "penyediasCreateEditTxt" : "Nama Badan Usaha",
+  "penyediasCreateEditTaskaNamaBadanUsahaTxt": "Nama Badan Usaha"
 }
